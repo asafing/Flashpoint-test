@@ -71,6 +71,14 @@ float Character::GetY()
 	return this->y;
 }
 
+AnimatedSprite2D* Character::GetAnimatedSprite()
+{
+	return this->animatedSprite;
+}
+
+AnimationSet2D* Character::GetAnimationSet() {
+	return this->animationSet;
+}
 void Character::SetVelocityX(float velocity)
 {
 	this->velocity_x = velocity;

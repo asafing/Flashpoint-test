@@ -26,7 +26,8 @@ private:
 	int animation_index;
 	SharedPtr<Scene> scene_;
 	SharedPtr<Node> cameraNode_;
-	SharedPtr<Node> spriteNode_;
+	SharedPtr<Node> heroNode_;
+	SharedPtr<Node> enemyNode_;
 	SharedPtr<Graphics> graphics;
 	Vector<SharedPtr<Node> > spriteNodes_;
 	ResourceCache* cache_;

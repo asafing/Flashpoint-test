@@ -37,6 +37,8 @@ public:
 	void MoveX(float move_size);
 	float GetX();
 	float GetY();
+	AnimatedSprite2D* GetAnimatedSprite();
+	AnimationSet2D* GetAnimationSet();
 	void SetVelocityX(float velocity);
 	void UpdateXByVelocity();
 };

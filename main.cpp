@@ -31,15 +31,25 @@ static const StringHash VAR_MOVESPEED("MoveSpeed");
 static const StringHash VAR_ROTATESPEED("RotateSpeed");
 
 void FlashPoint::SpawnCharacters() {
-    AnimationSet2D* animationSet = cache_->GetResource<AnimationSet2D>("Assets/characters/PNG/Satyr_03/VectorParts/Animations.scml");
-    spriteNode_ = scene_->CreateChild("SpriterAnimation");
-    AnimatedSprite2D* animatedSprite = spriteNode_->CreateComponent<AnimatedSprite2D>();
-    animatedSprite->SetAnimationSet(animationSet);
+    // Spawn Hero
+    AnimationSet2D* heroSet = cache_->GetResource<AnimationSet2D>("Assets/characters/PNG/Satyr_03/VectorParts/Animations.scml");
+    heroNode_ = scene_->CreateChild("SpriterAnimation");
+    AnimatedSprite2D* heroSprite = heroNode_->CreateComponent<AnimatedSprite2D>();
+    heroSprite->SetAnimationSet(heroSet);
+    mainHero_ = Character(1000, 120, 0, 0, heroSprite, heroSet);
+
+    // Spawn Golem
+    AnimationSet2D* enemySet = cache_->GetResource<AnimationSet2D>("Assets/golems/PNG/Golem_03/Vector Parts/Animations.scml");
+    enemyNode_ = scene_->CreateChild("SpriterAnimation");
+    AnimatedSprite2D* enemySprite = enemyNode_->CreateComponent<AnimatedSprite2D>();
+    enemySprite->SetAnimationSet(enemySet);
     enemies_ = new Character[1];
-    mainHero_ = Character(1000, 120, 0, 0, animatedSprite, animationSet);
     this->enemiesSize_++;
-    enemies_[0] = *new Character(350, 100, 50, 0, animatedSprite, animationSet);
-    animatedSprite->SetAnimation(animationSet->GetAnimation(animation_index), LM_FORCE_LOOPED);
+    enemies_[0] = *new Character(350, 100, 3, 0, enemySprite, enemySet);
+
+    //Start Animations
+    mainHero_.GetAnimatedSprite()->SetAnimation(mainHero_.GetAnimationSet()->GetAnimation(0), LM_FORCE_LOOPED);
+    enemies_[0].GetAnimatedSprite()->SetAnimation(enemies_[0].GetAnimationSet()->GetAnimation(1), LM_FORCE_LOOPED);
 }
 
 FlashPoint::FlashPoint(Context* context) :
@@ -74,13 +84,8 @@ void FlashPoint::Start()
     cache_ = GetSubsystem<ResourceCache>();
 
     //
-    // ANIMATIONS
-    //
-
-    //
     // VIEWPORT
     //
-
     Renderer* renderer = GetSubsystem<Renderer>();
     SharedPtr<Viewport> viewport(new Viewport(context_, scene_, cameraNode_->GetComponent<Camera>()));
     renderer->SetViewport(0, viewport);
@@ -88,13 +93,11 @@ void FlashPoint::Start()
     //
     // Spawner
     //
-
     SpawnCharacters();
+
     // Called after engine initialization. Setup application & subscribe to events here
     SubscribeToEvent(E_KEYDOWN, URHO3D_HANDLER(FlashPoint, HandleKeyDown));
     SubscribeToEvent(E_KEYUP, URHO3D_HANDLER(FlashPoint, HandleKeyUp));
-
-    // Subscribe HandleUpdate() function for processing update events
     SubscribeToEvent(E_UPDATE, URHO3D_HANDLER(FlashPoint, HandleUpdate));
     SubscribeToEvent(E_MOUSEBUTTONDOWN, URHO3D_HANDLER(FlashPoint, HandleMouseButtonDown));
 
@@ -115,10 +118,12 @@ void FlashPoint::HandleKeyDown(StringHash eventType, VariantMap& eventData)
     if (key == KEY_ESCAPE) 
         engine_->Exit();
     if (key == KEY_RIGHT) {
+        this->mainHero_.GetAnimatedSprite()->SetFlipX(false);
         this->mainHero_.play_animation(AnimationCode::walk);
         this->mainHero_.SetVelocityX(0.01);
     }
     if (key == KEY_LEFT) {
+        this->mainHero_.GetAnimatedSprite()->SetFlipX(true);
         this->mainHero_.play_animation(AnimationCode::walk);
         this->mainHero_.SetVelocityX(-0.01);
     }
@@ -141,12 +146,16 @@ void FlashPoint::HandleUpdate(StringHash eventType, VariantMap& eventData)
     using namespace Update;// Take the frame time step, which is stored as a float
     float timeStep = eventData[P_TIMESTEP].GetFloat();
     this->mainHero_.UpdateXByVelocity();
-    spriteNode_->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), -1.0f));
+    heroNode_->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), -1.2f));
+    for (int index = 0; index < enemiesSize_; index++) 
+    {
+        enemyNode_->SetPosition(Vector3(enemies_[index].GetX(), enemies_[0].GetY(), -1.1f));
+    }
 }
 
 void FlashPoint::HandleMouseButtonDown(StringHash eventType, VariantMap& eventData)
 {
-    AnimatedSprite2D* spriterAnimatedSprite = spriteNode_->GetComponent<AnimatedSprite2D>();
+    AnimatedSprite2D* spriterAnimatedSprite = heroNode_->GetComponent<AnimatedSprite2D>();
     AnimationSet2D* spriterAnimationSet = spriterAnimatedSprite->GetAnimationSet();
     animation_index = (animation_index + 1) % spriterAnimationSet->GetNumAnimations();
     spriterAnimatedSprite->SetAnimation(spriterAnimationSet->GetAnimation(animation_index), LM_FORCE_LOOPED);
