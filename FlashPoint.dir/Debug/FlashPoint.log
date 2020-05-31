@@ -1,0 +1,442 @@
+﻿  main.cpp
+  Note: including file: F:\Programming\FlashPoint\Application.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/Application.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Engine\../Core/Context.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/HashSet.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/HashBase.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho3D.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Allocator.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stddef.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\sal.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\concurrencysal.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vadefs.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Hash.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstddef
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\yvals_core.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xkeycheck.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xtr1common
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Swap.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Sort.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/VectorBase.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\yvals.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\crtdbg.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_new_debug.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_new.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\crtdefs.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\use_ansi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/Attribute.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/Ptr.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/RefCounted.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/Variant.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/HashMap.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Pair.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Vector.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstring
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_memory.h
+  Note: including file:           C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_memcpy_s.h
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\errno.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_string.h
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstring.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\new
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\exception
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\type_traits
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstddef
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdlib
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\math.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math.h
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdlib.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_malloc.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_search.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstdlib.h
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\limits.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\initializer_list
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\malloc.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_exception.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\eh.h
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_terminate.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Color.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector4.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector3.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector2.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Container/Str.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdarg
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\stdarg.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cctype
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\ctype.h
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wctype.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/MathDefs.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Random.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cmath
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\limits
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cfloat
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\float.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\climits
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cwchar
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdio
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstdio.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_stdio_config.h
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\wchar.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wconio.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wdirect.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wio.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_share.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wprocess.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wtime.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\sys/stat.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\sys/types.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Matrix3.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Matrix3x4.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Matrix4.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Quaternion.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\emmintrin.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xmmintrin.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\mmintrin.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Rect.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/StringHash.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/Object.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/LinkedList.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Engine\../Core/Main.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/ProcessUtils.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/MiniDump.h
+  Note: including file:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\windows.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\winapifamily.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\winpackagefamily.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\sdkddkver.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\excpt.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\windef.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\minwindef.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\specstrings.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\specstrings_strict.h
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\specstrings_undef.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\driverspecs.h
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\sdv_driverspecs.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winnt.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\kernelspecs.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\basetsd.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\guiddef.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack4.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack4.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack4.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\apiset.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\ktmtypes.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winbase.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\apisetcconv.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\minwinbase.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\apiquery2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\processenv.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\fileapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\debugapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\utilapiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\handleapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\errhandlingapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\fibersapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\namedpipeapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\profileapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\heapapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ioapiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\synchapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\interlockedapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\processthreadsapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\sysinfoapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\memoryapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\enclaveapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\threadpoollegacyapiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\threadpoolapiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\jobapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\jobapi2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\wow64apiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\libloaderapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\securitybaseapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\namespaceapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\systemtopologyapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\processtopologyapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\securityappcontainer.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\realtimeapiset.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\winerror.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\timezoneapi.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\wingdi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack4.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack4.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winuser.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\tvout.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winnls.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\datetimeapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\stringapiset.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winnls.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\wincon.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\wincontypes.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\consoleapi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\consoleapi2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\consoleapi3.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winver.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\verrsrc.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winreg.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\reason.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winnetwk.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wnnc.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\cderr.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\dde.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ddeml.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\dlgs.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\lzexpand.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsystem.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mciapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmiscapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmiscapi2.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\playsoundapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmeapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\timeapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\joystickapi.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mmsyscom.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\nb30.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpc.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcdce.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcdcep.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\rpcnsi.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcnterr.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcasync.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\shellapi.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winperf.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winsock.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\inaddr.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\wincrypt.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\bcrypt.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ncrypt.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\dpapi.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winefs.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winscard.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypes.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcndr.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\rpcnsip.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\rpcsal.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypesbase.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\guiddef.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winioctl.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack1.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\winsmcrd.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winspool.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\prsht.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ole2.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\objbase.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\combaseapi.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\unknwnbase.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\objidlbase.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\guiddef.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\cguid.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\coml2api.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\objidl.h
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\unknwn.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\propidlbase.h
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oaidl.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\urlmon.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oleidl.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\servprov.h
+  Note: including file:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\msxml.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\propidl.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oleauto.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\pshpack8.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\poppack.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\commdlg.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\prsht.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\stralign.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winsvc.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\mcx.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\imm.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ime_cmodes.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Engine\../Engine/Engine.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Engine\../Core/Timer.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Input/InputEvents.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL/SDL_joystick.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_stdinc.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_config.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_platform.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_error.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL/SDL_gamecontroller.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_rwops.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL/SDL_keycode.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_scancode.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL/SDL_mouse.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_video.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_pixels.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_endian.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_rect.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_surface.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\SDL_blendmode.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\begin_code.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\SDL\close_code.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Input/Input.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Input\../Core/Mutex.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Input\../Container/List.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/ListBase.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Input\../UI/Cursor.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../Graphics/Texture.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/GPUObject.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/GraphicsDefs.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Resource/Resource.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Resource/JSONValue.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../Resource/Image.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Container/ArrayPtr.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../UI/BorderImage.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../UI/UIElement.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../Resource/XMLFile.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Resource/XMLElement.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Math/BoundingBox.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../Scene/Animatable.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/Serializable.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/ValueAnimationInfo.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/AnimationDefs.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../UI/UIBatch.h
+  Note: including file:  F:\Programming\FlashPoint\Sample.h
+  Note: including file:   F:\Programming\FlashPoint\Sample.inl
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Camera.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Math/Frustum.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Plane.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Sphere.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Math/Ray.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Scene/Component.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/Console.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/DebugHud.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/EngineDefs.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/IO/FileSystem.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Graphics.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/ShaderVariation.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Renderer.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Batch.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Drawable.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Material.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Light.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Viewport.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Resource/ResourceCache.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../IO/File.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\IO\../IO/AbstractFile.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\IO\../IO/Serializer.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\IO\../IO/Deserializer.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Scene/Scene.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Resource/JSONFile.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/Node.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../IO/VectorBuffer.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/SceneResolver.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Scene/SceneEvents.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/UI/Sprite.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Texture2D.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/RenderSurface.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/UI/UI.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/IO/Log.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\IO\../Core/StringUtils.h
+  Note: including file:  F:\Programming\FlashPoint\Character.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/AnimatedSprite2D.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Urho2D/StaticSprite2D.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Urho2D/Drawable2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/AnimationSet2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/Sprite2D.h
+  Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Octree.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/OctreeQuery.h
+  Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Zone.h
+  Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Core/CoreEvents.h
+F:\Programming\FlashPoint\main.cpp(80,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+F:\Programming\FlashPoint\main.cpp(123,42): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\Programming\FlashPoint\main.cpp(128,43): warning C4305: 'argument': truncation from 'double' to 'float'
+  FlashPoint.vcxproj -> F:\Programming\FlashPoint\bin\FlashPoint_d.exe

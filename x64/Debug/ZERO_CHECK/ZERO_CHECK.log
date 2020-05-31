@@ -1,0 +1,29 @@
+﻿  Checking Build System
+  CMake is re-running because F:/Programming/FlashPoint/CMakeFiles/generate.stamp is out-of-date.
+    the file 'F:/Programming/FlashPoint/CMakeLists.txt'
+    is newer than 'F:/Programming/FlashPoint/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  CMake Deprecation Warning at CMakeLists.txt:9 (cmake_policy):
+    The OLD behavior for policy CMP0026 will be removed from a future version
+    of CMake.
+  
+    The cmake-policies(7) manual explains that the OLD behaviors of all
+    policies are deprecated and that a policy should be set to OLD only under
+    specific short-term circumstances.  Projects should be ported to the NEW
+    behavior and not rely on setting a policy to OLD.
+  
+  
+  CMake Deprecation Warning at CMakeLists.txt:13 (cmake_policy):
+    The OLD behavior for policy CMP0063 will be removed from a future version
+    of CMake.
+  
+    The cmake-policies(7) manual explains that the OLD behaviors of all
+    policies are deprecated and that a policy should be set to OLD only under
+    specific short-term circumstances.  Projects should be ported to the NEW
+    behavior and not rely on setting a policy to OLD.
+  
+  
+  -- Selecting Windows SDK version 10.0.17763.0 to target Windows 10.0.18363.
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: F:/Programming/FlashPoint

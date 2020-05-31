@@ -1,0 +1,10 @@
+﻿  Building Custom Rule F:/Programming/FlashPoint/CMakeLists.txt
+  main.cpp
+F:\Programming\FlashPoint\main.cpp(58,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+F:\Programming\FlashPoint\main.cpp(92,71): warning C4129: 'c': unrecognized character escape sequence
+F:\Programming\FlashPoint\main.cpp(92,71): warning C4129: 'P': unrecognized character escape sequence
+F:\Programming\FlashPoint\main.cpp(92,71): warning C4129: 'S': unrecognized character escape sequence
+F:\Programming\FlashPoint\main.cpp(92,71): warning C4129: 'V': unrecognized character escape sequence
+F:\Programming\FlashPoint\main.cpp(92,71): warning C4129: 'A': unrecognized character escape sequence
+     Creating library F:/Programming/FlashPoint/Debug/FlasePoint_d.lib and object F:/Programming/FlashPoint/Debug/FlasePoint_d.exp
+  FlasePoint.vcxproj -> F:\Programming\FlashPoint\bin\FlasePoint_d.exe

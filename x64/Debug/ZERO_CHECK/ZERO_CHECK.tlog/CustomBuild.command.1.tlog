@@ -1,0 +1,10 @@
+^F:\PROGRAMMING\FLASHPOINT\CMAKEFILES\3F97D555CD7A8FA5AC6EE953DE35FB81\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Programming/FlashPoint -BF:/Programming/FlashPoint --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/Programming/FlashPoint/FlashPoint.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
