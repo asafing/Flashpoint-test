@@ -1,4 +1,183 @@
-﻿  main.cpp
+﻿cl : command line warning D9030: '/showIncludes' is incompatible with multiprocessing; ignoring /MP switch
+  Character.cpp
+  Note: including file: F:\Programming\FlashPoint\Character.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/AnimatedSprite2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Urho2D/StaticSprite2D.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Urho2D/Drawable2D.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Graphics/Drawable.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/GraphicsDefs.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Container/HashBase.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho3D.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Allocator.h
+  Note: including file:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stddef.h
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\sal.h
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\concurrencysal.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vadefs.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Hash.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstddef
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\yvals_core.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xkeycheck.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xtr1common
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Swap.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Math/StringHash.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Container/Str.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Vector.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/VectorBase.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\yvals.h
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\crtdbg.h
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_new_debug.h
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_new.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\crtdefs.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\use_ansi.h
+  Note: including file:           C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstring
+  Note: including file:           C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_memory.h
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_memcpy_s.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\errno.h
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_string.h
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstring.h
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\new
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\exception
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\type_traits
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstddef
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdlib
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\math.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdlib.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_malloc.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_search.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstdlib.h
+  Note: including file:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\limits.h
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\initializer_list
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\malloc.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_exception.h
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\eh.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_terminate.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdarg
+  Note: including file:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\stdarg.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cctype
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\ctype.h
+  Note: including file:           C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wctype.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Math/BoundingBox.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Rect.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector4.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector3.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Vector2.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/MathDefs.h
+  Note: including file:            F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Random.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cmath
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\limits
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cfloat
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\float.h
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\climits
+  Note: including file:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cwchar
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdio
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wstdio.h
+  Note: including file:                 C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_stdio_config.h
+  Note: including file:              C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\wchar.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wconio.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wdirect.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wio.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_share.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wprocess.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_wtime.h
+  Note: including file:               C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\sys/stat.h
+  Note: including file:                C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\sys/types.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xmmintrin.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\mmintrin.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Scene/Component.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/Animatable.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Container/HashSet.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Sort.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:          C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/Serializable.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Core/Attribute.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/Ptr.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/RefCounted.h
+  Note: including file:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:            C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Core/Variant.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/HashMap.h
+  Note: including file:            F:\Programs\Urho3D-1.7.1\include\Urho3D\Container\../Container/Pair.h
+  Note: including file:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:             C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Color.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Matrix3.h
+  Note: including file:           F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Math/Matrix3x4.h
+  Note: including file:            F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Matrix4.h
+  Note: including file:             F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Quaternion.h
+  Note: including file:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\emmintrin.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Core/Object.h
+  Note: including file:          F:\Programs\Urho3D-1.7.1\include\Urho3D\Core\../Container/LinkedList.h
+  Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/ValueAnimationInfo.h
+  Note: including file:         F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/AnimationDefs.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/AnimationSet2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Container/ArrayPtr.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Resource/Resource.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Core/Timer.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Resource\../Resource/JSONValue.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/Sprite2D.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/RigidBody2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Box2D.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Settings.h
+  Note: including file:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Draw.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Math.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\math.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Timer.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2CircleShape.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2Shape.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2BlockAllocator.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2Collision.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2EdgeShape.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2ChainShape.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2PolygonShape.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2BroadPhase.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2DynamicTree.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2GrowableStack.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\algorithm
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xmemory
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdint
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\stdint.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xatomic.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\intrin0.h
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xutility
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\utility
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2Distance.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2TimeOfImpact.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2Body.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\memory
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\iosfwd
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\typeinfo
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_typeinfo.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2Fixture.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2WorldCallbacks.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2TimeStep.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2World.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2StackAllocator.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2ContactManager.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Contacts/b2Contact.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2DistanceJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2Joint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2FrictionJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2GearJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2MotorJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2MouseJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2PrismaticJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2PulleyJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2RevoluteJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2RopeJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2WeldJoint.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2WheelJoint.h
+  main.cpp
   Note: including file: F:\Programming\FlashPoint\Application.h
   Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/Application.h
   Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Engine\../Core/Context.h
@@ -389,6 +568,9 @@
   Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/ValueAnimationInfo.h
   Note: including file:        F:\Programs\Urho3D-1.7.1\include\Urho3D\Scene\../Scene/AnimationDefs.h
   Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\UI\../UI/UIBatch.h
+  Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Zone.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Drawable.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Scene/Component.h
   Note: including file:  F:\Programming\FlashPoint\Sample.h
   Note: including file:   F:\Programming\FlashPoint\Sample.inl
   Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Camera.h
@@ -396,7 +578,6 @@
   Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Plane.h
   Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Math\../Math/Sphere.h
   Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Math/Ray.h
-  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Scene/Component.h
   Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/Console.h
   Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/DebugHud.h
   Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Engine/EngineDefs.h
@@ -405,7 +586,6 @@
   Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/ShaderVariation.h
   Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Renderer.h
   Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Batch.h
-  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Drawable.h
   Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Material.h
   Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Light.h
   Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/Viewport.h
@@ -432,11 +612,64 @@
   Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\Urho2D\../Urho2D/Drawable2D.h
   Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/AnimationSet2D.h
   Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/Sprite2D.h
+  Note: including file:   F:\Programs\Urho3D-1.7.1\include\Urho3D/Urho2D/RigidBody2D.h
+  Note: including file:    F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Box2D.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Settings.h
+  Note: including file:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\assert.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Draw.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Math.h
+  Note: including file:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\math.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2Timer.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2CircleShape.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2Shape.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2BlockAllocator.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2Collision.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2EdgeShape.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2ChainShape.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/Shapes/b2PolygonShape.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2BroadPhase.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2DynamicTree.h
+  Note: including file:       F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2GrowableStack.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\algorithm
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xmemory
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cstdint
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\stdint.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xatomic.h
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\intrin0.h
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xutility
+  Note: including file:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\utility
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2Distance.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Collision/b2TimeOfImpact.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2Body.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\memory
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\iosfwd
+  Note: including file:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\typeinfo
+  Note: including file:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_typeinfo.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2Fixture.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2WorldCallbacks.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2TimeStep.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2World.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Common/b2StackAllocator.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/b2ContactManager.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Contacts/b2Contact.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2DistanceJoint.h
+  Note: including file:      F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2Joint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2FrictionJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2GearJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2MotorJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2MouseJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2PrismaticJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2PulleyJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2RevoluteJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2RopeJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2WeldJoint.h
+  Note: including file:     F:\Programs\Urho3D-1.7.1\include\Urho3D\ThirdParty\Box2D/Dynamics/Joints/b2WheelJoint.h
   Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Octree.h
   Note: including file:  F:\Programs\Urho3D-1.7.1\include\Urho3D\Graphics\../Graphics/OctreeQuery.h
-  Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Graphics/Zone.h
   Note: including file: F:\Programs\Urho3D-1.7.1\include\Urho3D/Core/CoreEvents.h
-F:\Programming\FlashPoint\main.cpp(80,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-F:\Programming\FlashPoint\main.cpp(123,42): warning C4305: 'argument': truncation from 'double' to 'float'
-F:\Programming\FlashPoint\main.cpp(128,43): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\Programming\FlashPoint\main.cpp(87,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+F:\Programming\FlashPoint\main.cpp(135,42): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\Programming\FlashPoint\main.cpp(140,43): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+     Creating library F:/Programming/FlashPoint/Debug/FlashPoint_d.lib and object F:/Programming/FlashPoint/Debug/FlashPoint_d.exp
   FlashPoint.vcxproj -> F:\Programming\FlashPoint\bin\FlashPoint_d.exe

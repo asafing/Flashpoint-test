@@ -1,50 +1,49 @@
-[Sun May 31 22:35:40 2020] INFO: Opened log file Urho3D.log
-[Sun May 31 22:35:40 2020] INFO: Created 5 worker threads
-[Sun May 31 22:35:40 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/Data/
-[Sun May 31 22:35:40 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/CoreData/
-[Sun May 31 22:35:40 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/Autoload/LargeData/
-[Sun May 31 22:35:41 2020] INFO: Created Direct3D9 device
-[Sun May 31 22:35:41 2020] INFO: Set screen mode 1920x1080 fullscreen monitor 0
-[Sun May 31 22:35:41 2020] INFO: Initialized input
-[Sun May 31 22:35:41 2020] INFO: Initialized user interface
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Textures/Ramp.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading temporary resource Textures/Ramp.xml
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Textures/Spot.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading temporary resource Textures/Spot.xml
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Techniques/NoTexture.xml
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource RenderPaths/Forward.xml
-[Sun May 31 22:35:41 2020] INFO: Initialized renderer
-[Sun May 31 22:35:41 2020] INFO: Set audio mode 44100 Hz stereo interpolated
-[Sun May 31 22:35:41 2020] INFO: Initialized engine
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Animations.scml
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Head.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Body.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 01.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Arm.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Hand.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Leg.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Leg.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Arm.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Hand.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Weapon.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 02.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 03.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Animations.scml
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Body.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Head.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 01.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 03.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 02.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Hand.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Arm.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Leg.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Leg.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Arm.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Hand.png
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Weapon.png
-[Sun May 31 22:35:41 2020] DEBUG: Reloading shaders
-[Sun May 31 22:35:41 2020] DEBUG: Loading resource Shaders/HLSL/Urho2D.hlsl
-[Sun May 31 22:35:41 2020] DEBUG: Loaded cached vertex shader Urho2D()
-[Sun May 31 22:35:41 2020] DEBUG: Loaded cached pixel shader Urho2D()
-[Sun May 31 22:39:17 2020] INFO: Device lost
-[Sun May 31 22:39:19 2020] DEBUG: Quitting SDL
+[Mon Jun  1 20:57:32 2020] INFO: Opened log file Urho3D.log
+[Mon Jun  1 20:57:32 2020] INFO: Created 5 worker threads
+[Mon Jun  1 20:57:32 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/Data/
+[Mon Jun  1 20:57:32 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/CoreData/
+[Mon Jun  1 20:57:32 2020] INFO: Added resource path F:/Programming/FlashPoint/bin/Autoload/LargeData/
+[Mon Jun  1 20:57:32 2020] INFO: Created Direct3D9 device
+[Mon Jun  1 20:57:32 2020] INFO: Set screen mode 1920x1080 fullscreen monitor 0
+[Mon Jun  1 20:57:32 2020] INFO: Initialized input
+[Mon Jun  1 20:57:32 2020] INFO: Initialized user interface
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Textures/Ramp.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading temporary resource Textures/Ramp.xml
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Textures/Spot.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading temporary resource Textures/Spot.xml
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Techniques/NoTexture.xml
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource RenderPaths/Forward.xml
+[Mon Jun  1 20:57:32 2020] INFO: Initialized renderer
+[Mon Jun  1 20:57:32 2020] INFO: Set audio mode 44100 Hz stereo interpolated
+[Mon Jun  1 20:57:32 2020] INFO: Initialized engine
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Animations.scml
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Head.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Body.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 01.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Arm.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Hand.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Right Leg.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Leg.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Arm.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Left Hand.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Weapon.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 02.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/characters/PNG/Satyr_03/VectorParts/Face 03.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Animations.scml
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Body.png
+[Mon Jun  1 20:57:32 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Head.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 01.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 03.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Face 02.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Hand.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Arm.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Right Leg.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Leg.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Arm.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Left Hand.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Assets/golems/PNG/Golem_03/Vector Parts/Weapon.png
+[Mon Jun  1 20:57:33 2020] DEBUG: Reloading shaders
+[Mon Jun  1 20:57:33 2020] DEBUG: Loading resource Shaders/HLSL/Urho2D.hlsl
+[Mon Jun  1 20:57:33 2020] DEBUG: Loaded cached vertex shader Urho2D()
+[Mon Jun  1 20:57:33 2020] DEBUG: Loaded cached pixel shader Urho2D()
+[Mon Jun  1 20:58:08 2020] DEBUG: Quitting SDL

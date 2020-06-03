@@ -2,6 +2,7 @@
 #include <Urho3D/Engine/Engine.h>
 #include <Urho3D/Input/InputEvents.h>
 #include <Urho3D/Input/Input.h>
+#include <Urho3D/Graphics/Zone.h>
 #include "Sample.h"
 #include "Character.h"
 
@@ -25,6 +26,7 @@ private:
 	int enemiesSize_;
 	int animation_index;
 	SharedPtr<Scene> scene_;
+	SharedPtr<Zone> zone_;
 	SharedPtr<Node> cameraNode_;
 	SharedPtr<Node> heroNode_;
 	SharedPtr<Node> enemyNode_;

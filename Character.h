@@ -1,6 +1,7 @@
 #include <Urho3D/Urho2D/AnimatedSprite2D.h>
 #include <Urho3D/Urho2D/AnimationSet2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/RigidBody2D.h>
 
 using namespace Urho3D;
 
@@ -25,6 +26,7 @@ private:
 	float velocity_y;
 	AnimatedSprite2D* animatedSprite;
 	AnimationSet2D* animationSet;
+	RigidBody2D* rigidBody;
 
 	void do_damage(Character target_char);
 public:

@@ -25,7 +25,9 @@
 #include <Urho3D/Urho2D/AnimatedSprite2D.h>
 #include <Urho3D/Urho2D/AnimationSet2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/Drawable2D.h>
 #include <Urho3D/Core/CoreEvents.h>
+#include <Urho3D/Graphics/Zone.h>
 
 static const StringHash VAR_MOVESPEED("MoveSpeed");
 static const StringHash VAR_ROTATESPEED("RotateSpeed");
@@ -36,6 +38,7 @@ void FlashPoint::SpawnCharacters() {
     heroNode_ = scene_->CreateChild("SpriterAnimation");
     AnimatedSprite2D* heroSprite = heroNode_->CreateComponent<AnimatedSprite2D>();
     heroSprite->SetAnimationSet(heroSet);
+    heroSprite->SetLayer(1);
     mainHero_ = Character(1000, 120, 0, 0, heroSprite, heroSet);
 
     // Spawn Golem
@@ -43,6 +46,7 @@ void FlashPoint::SpawnCharacters() {
     enemyNode_ = scene_->CreateChild("SpriterAnimation");
     AnimatedSprite2D* enemySprite = enemyNode_->CreateComponent<AnimatedSprite2D>();
     enemySprite->SetAnimationSet(enemySet);
+    enemySprite->SetLayer(2);
     enemies_ = new Character[1];
     this->enemiesSize_++;
     enemies_[0] = *new Character(350, 100, 3, 0, enemySprite, enemySet);
@@ -66,6 +70,7 @@ void FlashPoint::Setup()
 
 void FlashPoint::Start()
 {
+    cache_ = GetSubsystem<ResourceCache>();
     //
     // SCENE
     //
@@ -76,12 +81,13 @@ void FlashPoint::Start()
     Camera* camera = cameraNode_->CreateComponent<Camera>();
     camera->SetOrthographic(true);
     graphics = GetSubsystem<Graphics>();
+    int halfWidth = graphics->GetWidth() / 2;
+    int halfHeight = graphics->GetHeight() / 2;
     // Set camera ortho size (the value of PIXEL_SIZE is 0.01)
     camera->SetOrthoSize((float)graphics->GetHeight() * 0.01);
 
-    int halfWidth = graphics->GetWidth() / 2;
-    int halfHeight = graphics->GetHeight() / 2;
-    cache_ = GetSubsystem<ResourceCache>();
+    // Set zoom according to user's resolution to ensure full visibility (initial zoom (1.0) is set for full visibility at 1280x800 resolution)
+    camera->SetZoom(1.0f * Min((float)graphics->GetWidth() / 1920 / 2, (float)graphics->GetHeight() / 1080 / 2));
 
     //
     // VIEWPORT
@@ -89,6 +95,12 @@ void FlashPoint::Start()
     Renderer* renderer = GetSubsystem<Renderer>();
     SharedPtr<Viewport> viewport(new Viewport(context_, scene_, cameraNode_->GetComponent<Camera>()));
     renderer->SetViewport(0, viewport);
+
+    //
+    // ZONE
+    //
+    zone_ = renderer->GetDefaultZone();
+    zone_->SetFogColor(*new Color(0.1f, 0.2f, 0.3f));
 
     //
     // Spawner
@@ -120,12 +132,12 @@ void FlashPoint::HandleKeyDown(StringHash eventType, VariantMap& eventData)
     if (key == KEY_RIGHT) {
         this->mainHero_.GetAnimatedSprite()->SetFlipX(false);
         this->mainHero_.play_animation(AnimationCode::walk);
-        this->mainHero_.SetVelocityX(0.01);
+        this->mainHero_.SetVelocityX(0.02);
     }
     if (key == KEY_LEFT) {
         this->mainHero_.GetAnimatedSprite()->SetFlipX(true);
         this->mainHero_.play_animation(AnimationCode::walk);
-        this->mainHero_.SetVelocityX(-0.01);
+        this->mainHero_.SetVelocityX(-0.02);
     }
 }
 
@@ -146,10 +158,10 @@ void FlashPoint::HandleUpdate(StringHash eventType, VariantMap& eventData)
     using namespace Update;// Take the frame time step, which is stored as a float
     float timeStep = eventData[P_TIMESTEP].GetFloat();
     this->mainHero_.UpdateXByVelocity();
-    heroNode_->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), -1.2f));
+    heroNode_->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), 0));
     for (int index = 0; index < enemiesSize_; index++) 
     {
-        enemyNode_->SetPosition(Vector3(enemies_[index].GetX(), enemies_[0].GetY(), -1.1f));
+        enemyNode_->SetPosition(Vector3(enemies_[index].GetX(), enemies_[0].GetY(), 0));
     }
 }
 
@@ -160,5 +172,6 @@ void FlashPoint::HandleMouseButtonDown(StringHash eventType, VariantMap& eventDa
     animation_index = (animation_index + 1) % spriterAnimationSet->GetNumAnimations();
     spriterAnimatedSprite->SetAnimation(spriterAnimationSet->GetAnimation(animation_index), LM_FORCE_LOOPED);
 }
+
 
 URHO3D_DEFINE_APPLICATION_MAIN(FlashPoint)
