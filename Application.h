@@ -5,12 +5,6 @@
 #include "Sample.h"
 #include "Character.h"
 
-namespace Urho3D
-{
-	class Node;
-	class Scene;
-	class Sprite;
-}
 
 
 using namespace Urho3D;
@@ -20,14 +14,13 @@ class FlashPoint : public Sample
 	URHO3D_OBJECT(FlashPoint, Sample);
 
 private:
+	int write_index;
 	Character mainHero_;
-	Character* enemies_;
+	Vector<Character>* enemies_;
 	int enemiesSize_;
 	int animation_index;
 	SharedPtr<Scene> scene_;
 	SharedPtr<Node> cameraNode_;
-	SharedPtr<Node> heroNode_;
-	SharedPtr<Node> enemyNode_;
 	SharedPtr<Graphics> graphics;
 	Vector<SharedPtr<Node> > spriteNodes_;
 	ResourceCache* cache_;
@@ -41,4 +34,5 @@ public:
 	void HandleMouseButtonDown(StringHash eventType, VariantMap& eventData);
 	void HandleKeyUp(StringHash eventType, VariantMap& eventData);
 	void SpawnCharacters();
+	void WriteText(String s);
 };

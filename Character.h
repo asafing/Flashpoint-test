@@ -1,8 +1,15 @@
 #include <Urho3D/Urho2D/AnimatedSprite2D.h>
 #include <Urho3D/Urho2D/AnimationSet2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/RigidBody2D.h>
+#include <Urho3D/Scene/Scene.h>
 
 using namespace Urho3D;
+
+namespace Urho3D
+{
+	class Node;
+}
 
 enum class AnimationCode {
 	idle,
@@ -17,30 +24,36 @@ enum class AnimationCode {
 
 class Character {
 private:
+	Node* node;
+	String name;
 	int hp_;
 	int damage_;
-	float x;
-	float y;
 	float velocity_x;
 	float velocity_y;
-	AnimatedSprite2D* animatedSprite;
-	AnimationSet2D* animationSet;
+	AnimationSet2D* animation_set;
 
-	void do_damage(Character target_char);
+	void do_damage(Character* target_char);
+	Vector<Character*>* ScanHittable(Vector<Character>* chars);
 public:
-	Character(int hp, int damage, float x, float y, AnimatedSprite2D* animatedSprite, AnimationSet2D* animationSet);
+	Character(Node* node, String name, int hp, int damage, AnimationSet2D* set);
 	Character();
 	void play_animation(AnimationCode animation_code);
 	void suffer_damage(int damage);
-	int attack(Character* all_enemies, int size);
+	Character* attack(Vector<Character>* characters);
 	void faint();
-	void MoveX(float move_size);
+	void MoveX(float x_delta);
+	int GetDamage();
+	int GetHP();
 	float GetX();
 	float GetY();
-	AnimatedSprite2D* GetAnimatedSprite();
+	String GetName();
+	Node* GetNode();
 	AnimationSet2D* GetAnimationSet();
+	void SetNode(Node* node);
 	void SetVelocityX(float velocity);
 	void UpdateXByVelocity();
+	bool operator!=(Character cmp_char);
+	bool CheckCollision(Character coll_char);
 };
 
 #pragma once

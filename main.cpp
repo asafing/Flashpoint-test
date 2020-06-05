@@ -25,47 +25,94 @@
 #include <Urho3D/Urho2D/AnimatedSprite2D.h>
 #include <Urho3D/Urho2D/AnimationSet2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/CollisionBox2D.h>
 #include <Urho3D/Core/CoreEvents.h>
+#include <Urho3D/UI/Font.h>
+#include <Urho3D/UI/Text.h>
+#include <Urho3D/UI/Text3D.h>
+#include <sstream>
 
 static const StringHash VAR_MOVESPEED("MoveSpeed");
 static const StringHash VAR_ROTATESPEED("RotateSpeed");
-
+//css
 void FlashPoint::SpawnCharacters() {
+    enemies_ = new Vector<Character>();
+    this->enemiesSize_++;
+
     // Spawn Hero
     AnimationSet2D* heroSet = cache_->GetResource<AnimationSet2D>("Assets/characters/PNG/Satyr_03/VectorParts/Animations.scml");
-    heroNode_ = scene_->CreateChild("SpriterAnimation");
-    AnimatedSprite2D* heroSprite = heroNode_->CreateComponent<AnimatedSprite2D>();
+    Node* hero_node = scene_->CreateChild("Hero");
+    hero_node->SetPosition2D(0, 0);
+    AnimatedSprite2D* heroSprite = hero_node->CreateComponent<AnimatedSprite2D>();
+    heroSprite->SetLayer(5);
     heroSprite->SetAnimationSet(heroSet);
-    mainHero_ = Character(1000, 120, 0, 0, heroSprite, heroSet);
+    //RigidBody2D* hero_body = hero_node->CreateComponent<RigidBody2D>();
+    //hero_body->SetBodyType(BT_DYNAMIC);
+    //hero_body->SetLinearDamping(0.0f);
+   // hero_body->SetAngularDamping(0.0f);
+    CollisionBox2D* hero_box = hero_node->CreateComponent<CollisionBox2D>();
+    hero_box->SetSize(Vector2(3.5f, 3)); // Set size
+    hero_box->SetDensity(1.0f); // Set shape density (kilograms per meter squared)
+    hero_box->SetFriction(0.5f); // Set friction
+    hero_box->SetRestitution(0.1f); // Set restitution (slight bounce)
+    mainHero_ = Character(hero_node, "hero", 1000, 120, heroSet);
 
     // Spawn Golem
     AnimationSet2D* enemySet = cache_->GetResource<AnimationSet2D>("Assets/golems/PNG/Golem_03/Vector Parts/Animations.scml");
-    enemyNode_ = scene_->CreateChild("SpriterAnimation");
-    AnimatedSprite2D* enemySprite = enemyNode_->CreateComponent<AnimatedSprite2D>();
+    Node* enemy_node = scene_->CreateChild("Hero");
+    hero_node->SetPosition2D(3, 0);
+    AnimatedSprite2D* enemySprite = enemy_node->CreateComponent<AnimatedSprite2D>();
+    enemySprite->SetLayer(1);
     enemySprite->SetAnimationSet(enemySet);
-    enemies_ = new Character[1];
-    this->enemiesSize_++;
-    enemies_[0] = *new Character(350, 100, 3, 0, enemySprite, enemySet);
-
+    //RigidBody2D* enemy_body = enemy_node->CreateComponent<RigidBody2D>();
+    //enemy_body->SetBodyType(BT_DYNAMIC);
+    //enemy_body->SetLinearDamping(0.0f);
+    //enemy_body->SetAngularDamping(0.0f);
+    CollisionBox2D* enemy_box = enemy_node->CreateComponent<CollisionBox2D>();
+    enemy_box->SetSize(Vector2(2, 4)); // Set size
+    enemy_box->SetDensity(1.0f); // Set shape density (kilograms per meter squared)
+    enemy_box->SetFriction(0.5f); // Set friction
+    enemy_box->SetRestitution(0.1f); // Set restitution (slight bounce)
+    enemies_->Push(Character(enemy_node, "enemy", 500, 120, enemySet));
     //Start Animations
-    mainHero_.GetAnimatedSprite()->SetAnimation(mainHero_.GetAnimationSet()->GetAnimation(0), LM_FORCE_LOOPED);
-    enemies_[0].GetAnimatedSprite()->SetAnimation(enemies_[0].GetAnimationSet()->GetAnimation(1), LM_FORCE_LOOPED);
+    mainHero_.GetNode()->GetComponent<AnimatedSprite2D>()->SetAnimation(mainHero_.GetAnimationSet()->GetAnimation(0), LM_FORCE_LOOPED);
+    enemies_->Front().GetNode()->GetComponent<AnimatedSprite2D>()->SetAnimation(enemies_->Front().GetAnimationSet()->GetAnimation(0), LM_FORCE_LOOPED);
 }
-
 FlashPoint::FlashPoint(Context* context) :
     Sample(context),
     animation_index(0),
-    enemiesSize_(0)
+    enemiesSize_(0),
+    write_index(0)
 {
 }
 
 void FlashPoint::Setup()
 {
     // Called before engine initialization. engineParameters_ member variable can be modified here
+    // Modify engine startup parameters
+    engineParameters_[EP_WINDOW_TITLE] = GetTypeName();
+    engineParameters_[EP_LOG_NAME] = GetSubsystem<FileSystem>()->GetAppPreferencesDir("urho3d", "logs") + GetTypeName() + ".log";
+    engineParameters_[EP_FULL_SCREEN] = false;
+    engineParameters_[EP_HEADLESS] = false;
+    engineParameters_[EP_SOUND] = false;
+
+    // Construct a search path to find the resource prefix with two entries:
+    // The first entry is an empty path which will be substituted with program/bin directory -- this entry is for binary when it is still in build tree
+    // The second and third entries are possible relative paths from the installed program/bin directory to the asset directory -- these entries are for binary when it is in the Urho3D SDK installation location
+    if (!engineParameters_.Contains(EP_RESOURCE_PREFIX_PATHS))
+        engineParameters_[EP_RESOURCE_PREFIX_PATHS] = ";../share/Resources;../share/Urho3D/Resources";
 }
 
 void FlashPoint::Start()
 {
+    // Execute base class startup
+
+    // Enable OS cursor
+    GetSubsystem<Input>()->SetMouseVisible(true);
+
+    // Set the mouse mode to use in the sample
+    Sample::InitMouseMode(MM_FREE);
+
     //
     // SCENE
     //
@@ -75,10 +122,11 @@ void FlashPoint::Start()
     cameraNode_->SetPosition(Vector3(0.0f, 0.0f, -10.0f));
     Camera* camera = cameraNode_->CreateComponent<Camera>();
     camera->SetOrthographic(true);
+    camera->SetZoom(0.5);
     graphics = GetSubsystem<Graphics>();
+    
     // Set camera ortho size (the value of PIXEL_SIZE is 0.01)
     camera->SetOrthoSize((float)graphics->GetHeight() * 0.01);
-
     int halfWidth = graphics->GetWidth() / 2;
     int halfHeight = graphics->GetHeight() / 2;
     cache_ = GetSubsystem<ResourceCache>();
@@ -118,14 +166,20 @@ void FlashPoint::HandleKeyDown(StringHash eventType, VariantMap& eventData)
     if (key == KEY_ESCAPE) 
         engine_->Exit();
     if (key == KEY_RIGHT) {
-        this->mainHero_.GetAnimatedSprite()->SetFlipX(false);
+        this->mainHero_.GetNode()->GetComponent<AnimatedSprite2D>()->SetFlipX(false);
         this->mainHero_.play_animation(AnimationCode::walk);
         this->mainHero_.SetVelocityX(0.01);
     }
     if (key == KEY_LEFT) {
-        this->mainHero_.GetAnimatedSprite()->SetFlipX(true);
+        this->mainHero_.GetNode()->GetComponent<AnimatedSprite2D>()->SetFlipX(true);
         this->mainHero_.play_animation(AnimationCode::walk);
         this->mainHero_.SetVelocityX(-0.01);
+    }
+    if (key == KEY_Z) {
+        Character* a = this->mainHero_.attack(enemies_);
+        if (a != nullptr) {
+            WriteText(String(enemies_->Front().GetHP()));
+        }
     }
 }
 
@@ -145,20 +199,49 @@ void FlashPoint::HandleUpdate(StringHash eventType, VariantMap& eventData)
 {
     using namespace Update;// Take the frame time step, which is stored as a float
     float timeStep = eventData[P_TIMESTEP].GetFloat();
+
+    // Pop dead enemies
+    for (auto it = enemies_->Begin(); it != enemies_->End();) {
+        if (it->GetHP() < 0)
+        {
+            it->GetNode()->GetComponent<AnimatedSprite2D>()->Remove();
+            it = enemies_->Erase(it);
+        }
+        else
+            ++it;
+    }
+
     this->mainHero_.UpdateXByVelocity();
-    heroNode_->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), -1.2f));
-    for (int index = 0; index < enemiesSize_; index++) 
-    {
-        enemyNode_->SetPosition(Vector3(enemies_[index].GetX(), enemies_[0].GetY(), -1.1f));
+    mainHero_.GetNode()->SetPosition(Vector3(mainHero_.GetX(), mainHero_.GetY(), -1.2f));
+    for (Vector<Character>::Iterator it = enemies_->Begin(); it != enemies_->End(); it++) {
+        it->GetNode()->SetPosition(Vector3(it->GetX(), it->GetY(), -1.2f));
     }
 }
 
 void FlashPoint::HandleMouseButtonDown(StringHash eventType, VariantMap& eventData)
 {
-    AnimatedSprite2D* spriterAnimatedSprite = heroNode_->GetComponent<AnimatedSprite2D>();
+    AnimatedSprite2D* spriterAnimatedSprite = mainHero_.GetNode()->GetComponent<AnimatedSprite2D>();
     AnimationSet2D* spriterAnimationSet = spriterAnimatedSprite->GetAnimationSet();
     animation_index = (animation_index + 1) % spriterAnimationSet->GetNumAnimations();
     spriterAnimatedSprite->SetAnimation(spriterAnimationSet->GetAnimation(animation_index), LM_FORCE_LOOPED);
+}
+
+void FlashPoint::WriteText(String s)
+{
+    ResourceCache* cache = GetSubsystem<ResourceCache>();
+    UI* ui = GetSubsystem<UI>();
+
+    // Construct new Text object, set string to display and font to use
+    Text* instructionText = ui->GetRoot()->CreateChild<Text>();
+    instructionText->SetText(s);
+    instructionText->SetFont(cache->GetResource<Font>("Fonts/Anonymous Pro.ttf"), 15);
+    instructionText->SetTextAlignment(HA_CENTER); // Center rows in relation to each other
+
+    // Position the text relative to the screen center
+    instructionText->SetHorizontalAlignment(HA_CENTER);
+    instructionText->SetVerticalAlignment(VA_CENTER);
+    instructionText->SetPosition(0, ui->GetRoot()->GetHeight() / 10  + (20 * write_index));
+    write_index++;
 }
 
 URHO3D_DEFINE_APPLICATION_MAIN(FlashPoint)
