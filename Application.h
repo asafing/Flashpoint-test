@@ -14,6 +14,8 @@ class FlashPoint : public Sample
 	URHO3D_OBJECT(FlashPoint, Sample);
 
 private:
+	Node* background_node;
+	Vector<SharedPtr<Node>>* floor_vec;
 	int write_index;
 	Character mainHero_;
 	Vector<Character>* enemies_;
@@ -33,6 +35,8 @@ public:
 	void HandleUpdate(StringHash eventType, VariantMap& eventData);
 	void HandleMouseButtonDown(StringHash eventType, VariantMap& eventData);
 	void HandleKeyUp(StringHash eventType, VariantMap& eventData);
+	void HandleNodeCollision(StringHash eventType, VariantMap& eventData);
 	void SpawnCharacters();
+	void SpawnWorld();
 	void WriteText(String s);
 };

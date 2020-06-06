@@ -1,6 +1,4 @@
 #include "Character.h"
-#include "Urho3D/Urho2D/CollisionBox2D.h"
-
 Character::Character(Node* node, String name, int hp, int damage, AnimationSet2D* animationset) :
 	node(node),
 	name(name),
@@ -123,6 +121,11 @@ void Character::SetVelocityX(float velocity)
 {
 	this->velocity_x = velocity;
 }
+
+float Character::GetVelocityX() {
+	return velocity_x;
+}
+
 void Character::UpdateXByVelocity() {
 	this->MoveX(velocity_x);
 }

@@ -3,6 +3,8 @@
 #include <Urho3D/Urho2D/Sprite2D.h>
 #include <Urho3D/Urho2D/RigidBody2D.h>
 #include <Urho3D/Scene/Scene.h>
+#include "Urho3D/Urho2D/CollisionBox2D.h"
+
 
 using namespace Urho3D;
 
@@ -31,6 +33,7 @@ private:
 	float velocity_x;
 	float velocity_y;
 	AnimationSet2D* animation_set;
+	//CollisionBox2D weapon_box;
 
 	void do_damage(Character* target_char);
 	Vector<Character*>* ScanHittable(Vector<Character>* chars);
@@ -50,6 +53,7 @@ public:
 	Node* GetNode();
 	AnimationSet2D* GetAnimationSet();
 	void SetNode(Node* node);
+	float GetVelocityX();
 	void SetVelocityX(float velocity);
 	void UpdateXByVelocity();
 	bool operator!=(Character cmp_char);

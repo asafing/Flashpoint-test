@@ -27,6 +27,7 @@
 #include <Urho3D/Urho2D/Sprite2D.h>
 #include <Urho3D/Urho2D/CollisionBox2D.h>
 #include <Urho3D/Core/CoreEvents.h>
+#include <Urho3D/Physics/PhysicsEvents.h>
 #include <Urho3D/UI/Font.h>
 #include <Urho3D/UI/Text.h>
 #include <Urho3D/UI/Text3D.h>
@@ -34,9 +35,46 @@
 
 static const StringHash VAR_MOVESPEED("MoveSpeed");
 static const StringHash VAR_ROTATESPEED("RotateSpeed");
-//css
+
+void FlashPoint::SpawnWorld() {
+    //Init background
+    background_node = scene_->CreateChild("Background");
+    background_node->SetPosition(Vector2(0,0));
+    StaticSprite2D* back_sprite = background_node->CreateComponent<StaticSprite2D>();
+    back_sprite->SetSprite(cache_->GetResource<Sprite2D>("Assets/tiles/2 Background/Background.png"));
+    back_sprite->SetDrawRect(Rect(-10.5f, -8.3f, 10.5f, 8.3f)); // Set size
+    back_sprite->SetLayer(-5);
+
+    //Init floor
+    float curr_x = -4.5;
+    float curr_y = -0.4f;
+    float tile_size = 1;
+    const int total_tiles = 10; 
+    SharedPtr<Node>* tile_node = new SharedPtr<Node>();
+    floor_vec = new Vector<SharedPtr<Node>>;
+
+     // Create every floor tile and push to floor_vec
+    for (int i = 0; i < total_tiles; i++) {
+        tile_node->operator=(scene_->CreateChild(String("Floor" + i)));
+        tile_node->Get()->SetPosition(Vector2(curr_x, curr_y));
+        curr_x += tile_size;
+        StaticSprite2D* back_sprite = tile_node->Get()->CreateComponent<StaticSprite2D>();
+        String tile_path = "Assets/tiles/1 Tiles/Tile_02.png";
+        if (i == 0) {
+            tile_path = "Assets/tiles/1 Tiles/Tile_01.png";
+        }
+        else if (i == total_tiles - 1) {
+            tile_path = "Assets/tiles/1 Tiles/Tile_03.png";
+        }
+
+        back_sprite->SetSprite(cache_->GetResource<Sprite2D>(tile_path));
+        back_sprite->SetDrawRect(Rect(-tile_size / 2, -tile_size / 2, tile_size / 2, tile_size / 2)); // Set size
+        back_sprite->SetLayer(-1);
+        floor_vec->Push(*tile_node);
+    }
+}
+
 void FlashPoint::SpawnCharacters() {
-    enemies_ = new Vector<Character>();
     this->enemiesSize_++;
 
     // Spawn Hero
@@ -46,10 +84,10 @@ void FlashPoint::SpawnCharacters() {
     AnimatedSprite2D* heroSprite = hero_node->CreateComponent<AnimatedSprite2D>();
     heroSprite->SetLayer(5);
     heroSprite->SetAnimationSet(heroSet);
-    //RigidBody2D* hero_body = hero_node->CreateComponent<RigidBody2D>();
-    //hero_body->SetBodyType(BT_DYNAMIC);
-    //hero_body->SetLinearDamping(0.0f);
-   // hero_body->SetAngularDamping(0.0f);
+    RigidBody2D* hero_body = hero_node->CreateComponent<RigidBody2D>();
+    hero_body->SetBodyType(BT_DYNAMIC);
+    hero_body->SetLinearDamping(0.0f);  
+    hero_body->SetAngularDamping(0.0f);
     CollisionBox2D* hero_box = hero_node->CreateComponent<CollisionBox2D>();
     hero_box->SetSize(Vector2(3.5f, 3)); // Set size
     hero_box->SetDensity(1.0f); // Set shape density (kilograms per meter squared)
@@ -82,8 +120,11 @@ FlashPoint::FlashPoint(Context* context) :
     Sample(context),
     animation_index(0),
     enemiesSize_(0),
-    write_index(0)
+    write_index(0),
+    floor_vec()
 {
+    floor_vec = new Vector<SharedPtr<Node>>;
+    enemies_ = new Vector<Character>();
 }
 
 void FlashPoint::Setup()
@@ -141,6 +182,7 @@ void FlashPoint::Start()
     //
     // Spawner
     //
+    SpawnWorld();
     SpawnCharacters();
 
     // Called after engine initialization. Setup application & subscribe to events here
@@ -148,6 +190,7 @@ void FlashPoint::Start()
     SubscribeToEvent(E_KEYUP, URHO3D_HANDLER(FlashPoint, HandleKeyUp));
     SubscribeToEvent(E_UPDATE, URHO3D_HANDLER(FlashPoint, HandleUpdate));
     SubscribeToEvent(E_MOUSEBUTTONDOWN, URHO3D_HANDLER(FlashPoint, HandleMouseButtonDown));
+    SubscribeToEvent(E_PHYSICSCOLLISION, URHO3D_HANDLER(FlashPoint, HandleNodeCollision));
 
     // Unsubscribe the SceneUpdate event from base class to prevent camera pitch and yaw in 2D sample
     UnsubscribeFromEvent(E_SCENEUPDATE);
@@ -188,7 +231,15 @@ void FlashPoint::HandleKeyUp(StringHash eventType, VariantMap& eventData)
     using namespace KeyUp;
 
     int key = eventData[P_KEY].GetInt();
-    if (key == KEY_RIGHT || key == KEY_LEFT) {
+    if (key == KEY_RIGHT && mainHero_.GetVelocityX() < 0)
+    {
+        this->mainHero_.play_animation(AnimationCode::walk);
+
+    } else if (key == KEY_LEFT && mainHero_.GetVelocityX() > 0)
+    {
+        this->mainHero_.play_animation(AnimationCode::walk);
+    } else if (key == KEY_RIGHT || key == KEY_LEFT) 
+    {
         this->mainHero_.play_animation(AnimationCode::blink_idle);
         this->mainHero_.SetVelocityX(0);
     }
@@ -224,6 +275,11 @@ void FlashPoint::HandleMouseButtonDown(StringHash eventType, VariantMap& eventDa
     AnimationSet2D* spriterAnimationSet = spriterAnimatedSprite->GetAnimationSet();
     animation_index = (animation_index + 1) % spriterAnimationSet->GetNumAnimations();
     spriterAnimatedSprite->SetAnimation(spriterAnimationSet->GetAnimation(animation_index), LM_FORCE_LOOPED);
+}
+
+void FlashPoint::HandleNodeCollision(StringHash eventType, VariantMap& eventData)
+{
+    WriteText("AAAAAAA");
 }
 
 void FlashPoint::WriteText(String s)
