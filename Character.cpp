@@ -8,6 +8,8 @@ Character::Character(Node* node, String name, int hp, int damage, AnimationSet2D
 	velocity_y(0),
 	animation_set(animationset)
 {
+	//node->GetComponent<RigidBody2D>()->AddCollisionShape2D()
+	//weapon_box->SetSize(1.2, 2.4);
 }
 
 Character::Character() : hp_(100),
@@ -130,6 +132,16 @@ void Character::UpdateXByVelocity() {
 	this->MoveX(velocity_x);
 }
 
+float Character::GetVelocityY() {
+	return velocity_y;
+}
+
+void Character::SetVelocityY(float velocity)
+{
+	this->velocity_y = velocity;
+}
+
+
 Node* Character::GetNode()
 {
 	return node;
@@ -168,11 +180,11 @@ bool Character::operator!=(Character cmp_char)
 	return false;
 }
 bool Character::CheckCollision(Character coll_char) {
-	float this_end_x = this->GetX() + (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2);
+	float this_end_x = this->GetX() + (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2) + 1;
 	float coll_end_x = coll_char.GetX() + (coll_char.GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2);
 	float this_end_y = this->GetY() + (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().y_ / 2);
 	float coll_end_y = coll_char.GetY() + (coll_char.GetNode()->GetComponent<CollisionBox2D>()->GetSize().y_ / 2);
-	float this_start_x = this->GetX() - (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2);
+	float this_start_x = this->GetX()  + (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2);
 	float coll_start_x = coll_char.GetX() - (coll_char.GetNode()->GetComponent<CollisionBox2D>()->GetSize().x_ / 2);
 	float this_start_y = this->GetY() - (this->GetNode()->GetComponent<CollisionBox2D>()->GetSize().y_ / 2);
 	float coll_start_y = coll_char.GetY() - (coll_char.GetNode()->GetComponent<CollisionBox2D>()->GetSize().y_ / 2);

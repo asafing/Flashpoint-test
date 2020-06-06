@@ -15,6 +15,7 @@ class FlashPoint : public Sample
 
 private:
 	Node* background_node;
+	//Vector<Vector<SharedPtr<Node>>*> floor_vec;
 	Vector<SharedPtr<Node>>* floor_vec;
 	int write_index;
 	Character mainHero_;
@@ -25,7 +26,10 @@ private:
 	SharedPtr<Node> cameraNode_;
 	SharedPtr<Graphics> graphics;
 	Vector<SharedPtr<Node> > spriteNodes_;
-	ResourceCache* cache_;
+	ResourceCache* cache_; 
+	PhysicsWorld2D* physicsWorld;
+
+
 public:
 	FlashPoint(Context* context);
 	virtual void Setup();
@@ -36,6 +40,7 @@ public:
 	void HandleMouseButtonDown(StringHash eventType, VariantMap& eventData);
 	void HandleKeyUp(StringHash eventType, VariantMap& eventData);
 	void HandleNodeCollision(StringHash eventType, VariantMap& eventData);
+	void HandlePostRenderUpdate(StringHash eventType, VariantMap& eventData);		
 	void SpawnCharacters();
 	void SpawnWorld();
 	void WriteText(String s);

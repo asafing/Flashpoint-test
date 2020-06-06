@@ -55,6 +55,8 @@ public:
 	void SetNode(Node* node);
 	float GetVelocityX();
 	void SetVelocityX(float velocity);
+	float GetVelocityY();
+	void SetVelocityY(float velocity);
 	void UpdateXByVelocity();
 	bool operator!=(Character cmp_char);
 	bool CheckCollision(Character coll_char);
